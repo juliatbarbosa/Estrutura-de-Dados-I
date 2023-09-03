@@ -4,12 +4,10 @@ import json
 """ 02, fulano, 19, 78 """
 """ 08, beltrano, 20, 75 """
 
-#{02: {"fulano", "19", "78"}, 08: {"beltrano", "20", "75"}}
-
 print('CADASTRO DE ALUNOS')
 
 opcao = 1
-cadastros = {}    #bd -> banco de dados
+cadastros = {}
 while opcao != 3:
     print('='*10)
     print("1- Cadastrar")
@@ -22,15 +20,15 @@ while opcao != 3:
         nome = input('Nome: ')
         idade = input('Idade: ')
         nota = input('Nota: ')
-        # adicionar a quantidade do produto no estoque
         cadastro = {'nome': nome, 'idade': idade, 'nota': nota}
         cadastros[matricula] = cadastro
         print('-----Cadastrado com sucesso-----')
     elif opcao == 2:
         print('-----Alunos-----')
-        # percorrer o bd
         print(cadastros)
         print('-----Fim dos alunos-----')
+    elif opcao == 3:
+        print('Salvando e saindo... 🚀')
 
 json_str = json.dumps(cadastros)
 #salvar em arquivo
