@@ -13,4 +13,4 @@ print('STRING SERIALIZADA - FORMATO JSON')
 print(json_str)
 #salvar em arquivo
 with open('31082023/dados.json', 'w') as json_file:
-    json.dump(dados, json_file)
+    json.dump(dados, json_file, indent=4)

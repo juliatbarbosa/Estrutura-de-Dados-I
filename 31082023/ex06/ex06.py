@@ -33,5 +33,5 @@ while opcao != 3:
 json_str = json.dumps(cadastros)
 #salvar em arquivo
 with open('31082023/ex06/alunos.json', 'w') as json_file:
-    json.dump(cadastros, json_file)
+    json.dump(cadastros, json_file, indent=4)
 
