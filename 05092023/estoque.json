@@ -1,0 +1,14 @@
+{
+    "02": {
+        "nome": "bala",
+        "preco": 0.5
+    },
+    "01": {
+        "nome": "banana",
+        "preco": 5.99
+    },
+    "03": {
+        "nome": "Pizza",
+        "preco": 29.99
+    }
+}
