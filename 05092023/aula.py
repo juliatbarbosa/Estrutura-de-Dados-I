@@ -9,12 +9,15 @@ atributos: nome, codigo, preco, peso
 banco_dados = {}
 opcao = 1
 
+def carregarDados():
+    try:
+        with open('05092023/estoque.json', 'r') as arquivo:
+            banco_dados = json.load(arquivo)
+    except:
+        print('O arquivo não existe!')
+
 # preciso carregar o que estiver no arquivo
-try:
-    with open('05092023/estoque.json', 'r') as arquivo:
-        banco_dados = json.load(arquivo)
-except:
-    print('O arquivo não existe!')
+carregarDados()
 
 while opcao != 4:
     print('='*10)
@@ -24,7 +27,7 @@ while opcao != 4:
     print('4- Sair')
     opcao = int(input('Escolha a opção: '))
     if opcao == 1:
-        print('-----Cadastrar aluno-----')
+        print('-----Cadastrar produto -----')
         codigo = input('Digite o código: ')
         nome = input('Digite o nome do produto: ')
         preco = float(input('Digite o preço do kg/und: '))
@@ -40,3 +43,4 @@ while opcao != 4:
         print('Salvando e saindo... 🚀')
     else:
         print('Opção inválida!')
+

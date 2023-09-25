@@ -1,0 +1,98 @@
+{
+    "01": {
+        "nome": "arroz",
+        "quantidade": "3",
+        "preco": 32.1198,
+        "disponivel": true
+    },
+    "03": {
+        "nome": "miojo",
+        "quantidade": "15",
+        "preco": 2.6724,
+        "disponivel": false
+    },
+    "04": {
+        "nome": "leite",
+        "quantidade": "25",
+        "preco": 3.3455999999999997,
+        "disponivel": true
+    },
+    "05": {
+        "nome": "ovo",
+        "quantidade": "12",
+        "preco": 9.3636,
+        "disponivel": true
+    },
+    "02": {
+        "nome": "beterraba",
+        "quantidade": 0,
+        "preco": 9.99,
+        "disponivel": false
+    },
+    "006": {
+        "nome": "coca-cola",
+        "quantidade": 5,
+        "preco": 5.99,
+        "disponivel": true
+    },
+    "007": {
+        "nome": "lasanha",
+        "quantidade": 12,
+        "preco": 19.9,
+        "disponivel": true
+    },
+    "008": {
+        "nome": "pizza",
+        "quantidade": 6,
+        "preco": 29.99,
+        "disponivel": true
+    },
+    "009": {
+        "nome": "sorvete",
+        "quantidade": 20,
+        "preco": 10.8,
+        "disponivel": true
+    },
+    "010": {
+        "nome": "bolo de fub\u00e1",
+        "quantidade": 2,
+        "preco": 8.0,
+        "disponivel": true
+    },
+    "011": {
+        "nome": "bolo de chocolate",
+        "quantidade": 6,
+        "preco": 12.5,
+        "disponivel": true
+    },
+    "012": {
+        "nome": "batata-frita",
+        "quantidade": 3,
+        "preco": 13.75,
+        "disponivel": true
+    },
+    "013": {
+        "nome": "almondega",
+        "quantidade": 24,
+        "preco": 11.99,
+        "disponivel": true
+    },
+    "014": {
+        "nome": "biscoito",
+        "quantidade": 12,
+        "preco": 1.99,
+        "disponivel": true
+    },
+    "015": {
+        "nome": "bolacha",
+        "quantidade": 4,
+        "preco": 2.5,
+        "disponivel": true
+    },
+    "022": {
+        "nome": "doce de leite",
+        "quantidade": 4,
+        "preco": 3.9,
+        "disponivel": true
+    }
+}
