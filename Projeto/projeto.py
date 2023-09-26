@@ -5,7 +5,7 @@ estoque = {}
 opcao = 1
 repetir = 'S'
 
-#Verificação se existe o arquivo na pasta, se existir, ele carrega os dados, se não, ele printa uma mensagem e ao salvar no final da execução, ele cria um novo arquivo.
+#Verificar se existe o arquivo na pasta, se existir, ele carrega os dados, se não, ele printa uma mensagem e ao salvar no final da execução, ele cria um novo arquivo.
 try:
     with open('Projeto/estoque.json', 'r') as arquivo:
         estoque = json.load(arquivo)
