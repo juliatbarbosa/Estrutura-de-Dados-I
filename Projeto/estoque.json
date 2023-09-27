@@ -2,91 +2,85 @@
     "01": {
         "nome": "arroz",
         "quantidade": "3",
-        "preco": 32.1198,
+        "preco": 28.907819999999997,
         "disponivel": true
     },
     "03": {
         "nome": "miojo",
         "quantidade": "15",
-        "preco": 2.6724,
+        "preco": 2.40516,
         "disponivel": false
-    },
-    "04": {
-        "nome": "leite",
-        "quantidade": "25",
-        "preco": 3.3455999999999997,
-        "disponivel": true
     },
     "05": {
         "nome": "ovo",
         "quantidade": "12",
-        "preco": 9.3636,
+        "preco": 8.42724,
         "disponivel": true
     },
     "02": {
         "nome": "beterraba",
         "quantidade": 0,
-        "preco": 9.99,
+        "preco": 8.991,
         "disponivel": false
     },
     "006": {
         "nome": "coca-cola",
         "quantidade": 5,
-        "preco": 5.99,
+        "preco": 8.091000000000001,
         "disponivel": true
     },
     "007": {
         "nome": "lasanha",
         "quantidade": 12,
-        "preco": 19.9,
+        "preco": 17.91,
         "disponivel": true
     },
     "008": {
         "nome": "pizza",
         "quantidade": 6,
-        "preco": 29.99,
+        "preco": 26.991,
         "disponivel": true
     },
     "009": {
         "nome": "sorvete",
         "quantidade": 20,
-        "preco": 10.8,
+        "preco": 9.72,
         "disponivel": true
     },
     "011": {
         "nome": "bolo de chocolate",
         "quantidade": 6,
-        "preco": 12.5,
+        "preco": 11.25,
         "disponivel": true
     },
     "012": {
         "nome": "batata-frita",
         "quantidade": 3,
-        "preco": 13.75,
+        "preco": 12.375,
         "disponivel": true
     },
     "013": {
         "nome": "almondega",
         "quantidade": 24,
-        "preco": 11.99,
+        "preco": 10.791,
         "disponivel": true
     },
     "014": {
         "nome": "biscoito",
         "quantidade": 12,
-        "preco": 1.99,
+        "preco": 1.791,
         "disponivel": true
     },
     "015": {
         "nome": "bolacha",
         "quantidade": 4,
-        "preco": 2.5,
+        "preco": 2.25,
         "disponivel": true
     },
     "022": {
         "nome": "doce de leite",
         "quantidade": 4,
-        "preco": 3.9,
+        "preco": 3.51,
         "disponivel": true
     }
 }
