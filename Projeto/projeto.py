@@ -99,7 +99,7 @@ def excluirRegistroProdutoPorCodigo():
         codigo = input('Digite o código do produto: ')
     
     estoque.pop(codigo) # pop() -> função para remover item do dicionario
-    print(estoque)
+    print(f'Produto com código {codigo} excluído com sucesso!')
 
 while repetir == 'S':
     while opcao != 7:
