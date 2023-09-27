@@ -53,12 +53,6 @@
         "preco": 10.8,
         "disponivel": true
     },
-    "010": {
-        "nome": "bolo de fub\u00e1",
-        "quantidade": 2,
-        "preco": 8.0,
-        "disponivel": true
-    },
     "011": {
         "nome": "bolo de chocolate",
         "quantidade": 6,
