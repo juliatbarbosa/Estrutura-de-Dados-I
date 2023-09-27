@@ -48,13 +48,16 @@ def consultarProdutoPorCodigo():
     print(f'Disponível: {estoque[codigo]["disponivel"]}')
 
 def consultarTodosProdutos():
-    for chave, produto in estoque.items(): # -> items() retorna os itens -> chave e valor das chaves (nome, valor...)
-        print(f'Código: {chave}')
-        print(f'Nome: {produto["nome"]}')
-        print(f'Quantidade: {produto["quantidade"]}')
-        print(f'Preço: {produto["preco"]}')
-        print(f'Disponível: {"Sim" if produto["disponivel"] == True else "Não"}')
-        print('='*10)
+    if estoque:
+        for chave, produto in estoque.items(): # -> items() retorna os itens -> chave e valor das chaves (nome, valor...)
+            print(f'Código: {chave}')
+            print(f'Nome: {produto["nome"]}')
+            print(f'Quantidade: {produto["quantidade"]}')
+            print(f'Preço: {produto["preco"]}')
+            print(f'Disponível: {"Sim" if produto["disponivel"] == True else "Não"}')
+            print('='*10)
+    else: 
+        print('Nenhum produto existente!')
 
 def alterarPrecoPorCodigo():
     codigo = input('Digite o código do produto: ')
