@@ -19,10 +19,7 @@ def inicializa_lista(quantidade=5):
 
 
 def pesquisar_valor(num):
-    if num in v:
-        print('Está na lista')
-    else:
-        print('Não está na lista')
+    return num in v
 
 
 def menu():
@@ -46,7 +43,10 @@ if __name__ == '__main__':
             print(f"a media eh {media:.2f}")
         elif op == 3:
             num = int(input('Digite o número que deseja pesquisar: '))
-            pesquisar_valor(num);
+            if pesquisar_valor(num,):
+                print(f'{num} está na lista')
+            else:
+              print(f'{num} não está na lista')  
     else:
         print('Saindo....')
 
