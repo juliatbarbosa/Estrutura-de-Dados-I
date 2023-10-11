@@ -9,7 +9,6 @@ def calcula_media(v):
     else:
         return 0 
     
-    
 
 def inicializa_lista(quantidade=5):
     lista = []
@@ -18,13 +17,13 @@ def inicializa_lista(quantidade=5):
         lista.append(valor)
     return lista
 
+
 def pesquisar_valor():
     num = int(input('Digite o número que deseja pesquisar: '))
     if num in v:
         print('Está na lista')
     else:
         print('Não está na lista')
-
 
 
 def menu():
