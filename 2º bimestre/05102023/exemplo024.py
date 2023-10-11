@@ -18,8 +18,7 @@ def inicializa_lista(quantidade=5):
     return lista
 
 
-def pesquisar_valor():
-    num = int(input('Digite o número que deseja pesquisar: '))
+def pesquisar_valor(num):
     if num in v:
         print('Está na lista')
     else:
@@ -46,7 +45,8 @@ if __name__ == '__main__':
             media = calcula_media(v)
             print(f"a media eh {media:.2f}")
         elif op == 3:
-            pesquisar_valor();
+            num = int(input('Digite o número que deseja pesquisar: '))
+            pesquisar_valor(num);
     else:
         print('Saindo....')
 
