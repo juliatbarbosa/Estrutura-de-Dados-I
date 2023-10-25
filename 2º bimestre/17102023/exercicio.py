@@ -15,10 +15,11 @@ estado_memoria = 0;
 
 op = 0
 
+print('='*15)
+print('Calculadora')
+print('='*15)
+
 def calculadora():
-    print('='*15)
-    print('Calculadora')
-    print('='*15)
     print('1- Somar')
     print('2- Subtrair')
     print('3- Multiplicar')
@@ -28,31 +29,23 @@ def calculadora():
     return int(input('Digite sua opção: '))
 
 def numero(estado_memoria):
+    print('='*15)
     print(f'Memória: {estado_memoria:.0f}')
+    print('='*15)
     num = float(input('Digite o número desejado: '));
     return num
 
 def somar(num, memoria):
-    memoria += num
-    return memoria
+    return memoria + num
 
 def subtrair(num, memoria):
-    memoria -= num
-    return memoria
+    return memoria - num
 
 def multiplicar(num, memoria):
-    if (memoria == 0):
-        num2 = float(input('Sua memória é igual a zero. Digite um número para multiplicar o número anterior: '))
-        
-    memoria = num2 * num
-    return memoria
+    return memoria * num
 
 def dividir(num, memoria):
-    if (memoria == 0):
-        num2 = float(input('Sua memória é igual a zero. Digite um número para ser dividido pelo número anterior: '))
-    
-    memoria = num2 / num
-    return memoria
+    return memoria / num
 
 def limparmemoria(memoria):
     memoria = 0
@@ -62,26 +55,42 @@ def limparmemoria(memoria):
 while op != 6:
     op = calculadora()
     if op == 1:
+        print('===== SOMAR =====')
         num = numero(estado_memoria);
         estado_memoria = somar(num, estado_memoria);
-        print(f'Memória: {estado_memoria:.2f}');
+        print('='*15)
+        print(f'Memória: {estado_memoria:.1f}');
+        print('='*15)
         
     elif op == 2:
+        print('===== SUBTRAIR =====')
         num = numero(estado_memoria);
         estado_memoria = subtrair(num, estado_memoria);
-        print(f'Memória: {estado_memoria:.0f}');
+        print('='*15)
+        print(f'Memória: {estado_memoria:.1f}');
+        print('='*15)
     
     elif op == 3:
+        print('===== MULTIPLICAR =====')
         num = numero(estado_memoria);
         estado_memoria = multiplicar(num, estado_memoria);
-        print(f'Memória: {estado_memoria:.2f}');
+        print('='*15)
+        print(f'Memória: {estado_memoria:.1f}');
+        print('='*15)
+
     elif op == 4:
+        print('===== DIVIDIR =====')
         num = numero(estado_memoria);
         estado_memoria = dividir(num, estado_memoria);
-        print(f'Memória: {estado_memoria:.2f}');
+        print('='*15)
+        print(f'Memória: {estado_memoria:.1f}');
+        print('='*15)
     
     elif op == 5:
+        print('===== LIMPAR =====')
         estado_memoria = limparmemoria(estado_memoria);
-        print(f'Memória: {estado_memoria:.2f}');
+        print('='*15)
+        print(f'Memória: {estado_memoria:.1f}');
+        print('='*15)
 else:
     print('Saindo....')
