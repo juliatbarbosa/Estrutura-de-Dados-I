@@ -5,6 +5,8 @@
 soma = num1 + num2
 print(soma) """
 
+arquivo = "C:\\Users\\teixe\\OneDrive\\Documentos\\FACULDADE\\2º semestre\\Estrutura de Dados I\\2º bimestre\\14112023\\arquivos\\entrada.txt"
+
 def leitura(nome_arquivo: str):
     try:
         lista = []
@@ -22,23 +24,23 @@ def leitura(nome_arquivo: str):
         return None
 
 def soma_valores_arquivo():
-    valores = leitura("C:\\Users\\teixe\\OneDrive\\Documentos\\FACULDADE\\2º semestre\\Estrutura de Dados I\\2º bimestre\\14112023\\arquivos\\entrada.txt")
+    valores = leitura(arquivo)
     return sum(valores)
 
 # EXERCICIOS 16/11/2023 
 def maior_valor_arquivo():
-    valores = leitura("C:\\Users\\teixe\\OneDrive\\Documentos\\FACULDADE\\2º semestre\\Estrutura de Dados I\\2º bimestre\\14112023\\arquivos\\entrada.txt")
+    valores = leitura(arquivo)
     return max(valores)
 
 def multiplica_valores_arquivo():
-    valores = leitura("C:\\Users\\teixe\\OneDrive\\Documentos\\FACULDADE\\2º semestre\\Estrutura de Dados I\\2º bimestre\\14112023\\arquivos\\entrada.txt")
+    valores = leitura(arquivo)
     resultado = 1
     for i in valores:
         resultado *= i
     return resultado
 
 if __name__ == '__main__':
-    valores = leitura("C:\\Users\\teixe\\OneDrive\\Documentos\\FACULDADE\\2º semestre\\Estrutura de Dados I\\2º bimestre\\14112023\\arquivos\\entrada.txt")
+    valores = leitura(arquivo)
     soma = soma_valores_arquivo()
     print(f'A soma de {valores} é: {soma}')
     maior = maior_valor_arquivo()
